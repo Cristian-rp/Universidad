@@ -1,0 +1,26 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area y perimetro de un cuadrado</title>
+    <script language = "javascript">
+        //Pedir medidas del cuadrado
+        lados = parseFloat(prompt("Ingrese la medida de los lados del cuadrado"))
+        
+        //Calcular area
+        area = lados**2
+        //alert("El area del cuadrado es: "+area)
+
+        //Calcular el perimetro
+        per = lados*4
+        //alert("El perimetro del cuadrado es: "+per)
+
+       //Tabla
+       document.write("<center>")
+       document.write("<table border=1 bordercolor=green width=600 height=300 cellspacing=2 style='text-align: center;'>")
+       document.write("<tr bgcolor=#adf7b6><td colspan=3>Area y Perimetro de un cuadrado</td></tr>")
+       document.write("<tr bgcolor=#FFF5EE><td>Lado</td><td>Area</td><td>Perimetro</td></tr>")
+       document.write("<tr bgcolor=#FFF5EE><td>"+lados+"</td><td>"+area+"</td><td>"+per+"</td></tr></table>")
+    </script>
+</head>

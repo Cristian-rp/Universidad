@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>España</title>
+    <script language="javascript">
+        function verBandera(){
+                document.for.im1.width = 240
+                document.for.im1.height= 180
+        }//Cierre función verBandera
+        function ocultarBandera(){
+                document.for.im1.width = 0
+                document.for.im1.height= 0
+        }//Cierre función ocultarBandera
+        function verEscudo(){
+                document.for.im2.width = 240
+                document.for.im2.height= 180
+        }//Cierre función verEscudo
+        function ocultarEscudo(){
+                document.for.im2.width = 0
+                document.for.im2.height= 0
+        }//Cierre función ocultarEscudo
+        function HimnoEsp(){
+            document.for.himn.value="Primera estrofa:\n\n¡Viva España!\nAlzad los brazos\nHijos del pueblo español\nQue vuelve a resurgir. (bis)\nGloria a la Patria que supo seguir\nSobre el azul del mar\nEl caminar del Sol.\n\nEstribillo:\n\n¡Triunfa España!\nLos yunques y las ruedas\nCantan al compás\nDel himno de la fe.\nJuntos con ellos\nCantemos de pie\nLa vida nueva y fuerte\nDe trabajo y paz.\n\nSegunda estrofa:\n\n¡Viva España!\nAlzad los brazos\nHijos del pueblo español\nQue vuelve a resurgir. (bis)\nGloria a la Patria que supo seguir\nSobre el azul del mar\nEl caminar del Sol.\n\nTercera estrofa:\n\n¡Triunfa España!\nLos yunques y las ruedas\nCantan al compás\nDel himno de la fe. (bis)\nJuntos con ellos\nCantemos de pie\nLa vida nueva y fuerte\nDe trabajo y paz.\n\nCuarta estrofa:\n\n¡Viva España!\nAlzad los brazos\nHijos del pueblo español\nQue vuelve a resurgir. (bis)\nGloria a la Patria que supo seguir\nSobre el azul del mar\nEl caminar del Sol.\n\nQuinta estrofa:\n\n¡Triunfa España!\nLos yunques y las ruedas\nCantan al compás\nDel himno de la fe. (bis)\nJuntos con ellos\nCantemos de pie\nLa vida nueva y fuerte\nDe trabajo y paz.\n\nSexta estrofa:\n\n¡Viva España!\nAlzad los brazos\nHijos del pueblo español\nQue vuelve a resurgir. (bis)\nGloria a la Patria que supo seguir\nSobre el azul del mar\nEl caminar del Sol.\n\nSeptima estrofa:\n\n¡Triunfa España!\nLos yunques y las ruedas\nCantan al compás\nDel himno de la fe. (bis)\nJuntos con ellos\nCantemos de pie\nLa vida nueva y fuerte\nDe trabajo y paz."
+        }//Cierre función verHimno
+        function ocultarHimno(){
+            document.for.himn.value="Desea ver el himno?"
+        }//Cierre función ocultarHimno
+        function datos(){
+            if(document.for.dat.selectedIndex==0){
+                document.for.info.value=""
+            }else{
+                if(document.for.dat.selectedIndex==1){
+                    document.for.info.value="En total, tiene una superficie de poco más de 505.000 kilómetros cuadrados, de los que solo unos 12.500 kilómetros cuadrados pertenecen a la superficie insular."
+                }else{
+                    if(document.for.dat.selectedIndex==2){
+                        document.for.info.value="España finalizó junio de 2025 con una población de 49.315.949 personas, lo que supone un incremento de 508.475 habitantes en el último año, 241.045 mujeres y 267.430 hombres, respecto a la misma fecha del año anterior, en el que la población fue de 48.807.474 personas."
+                    }else{
+                        if(document.for.dat.selectedIndex==3){
+                            document.for.info.value="Sobrino de Botín, en Madrid, abrió sus puertas en 1725 y está reconocido por el Libro Guinness de los Récords como el restaurante más antiguo del mundo. ¡En tu próxima visita, también podrás cenar allí! Ofrecen cocina típica española ."
+                        }else{
+                            if(document.for.dat.selectedIndex==4){
+                                document.for.info.value="Quizás hayas oído que la religión católica es la más común en España, pero no siempre ha sido así. Desde el año 711 hasta 1492, España estuvo bajo dominio musulmán. En el sur de España, el último territorio conquistado por los monarcas católicos Fernando e Isabel, aún se pueden ver los magníficos vestigios del reino anterior. La gastronomía, el idioma y la educación en España están fuertemente influenciados por este período."
+                            }else{
+                                if(document.for.dat.selectedIndex==5){
+                                    document.for.info.value="En el yacimiento burgalés de Atapuerca, los científicos han hallado una de las principales evidencias de que hace 800.000 años los primeros europeos se comían entre ellos. Este descubrimiento se realizó tras analizar los fósiles de seis individuos donde se encontraron patrones de haber sido devorados por humanos."
+                                }
+                            }//Cierre else 5
+                        }//Cierre else 4
+                    }//Cierre else 3
+                }//Cierre else 2
+            }//Cierre else 1
+        }//Cierre función datos
+        
+    </script>
+</head>
+<body>
+    <center>
+        <form name="for">
+            <table width=700 height=1000 border=1 bordercolor=black align=center>
+                <tr height="10%" bgcolor="#c76e0a">
+                    <th colspan="2"><h1>ESPAÑA</h1></th>
+                </tr>
+                <tr height="6%" bgcolor="#c76e0a">
+                    <th> Bandera </th>
+                    <th> Escudo  </th>
+                </tr>
+                <tr height="25%" bgcolor="#ea9744">
+                    <th><img src="img españa/bandera.jpg" id="im1" width="0" height="0"></th>
+                    <th><img src="img españa/descargar.jpg" id="im2" width="0" height="0"></th>
+                </tr>
+                <tr height="6%" bgcolor="#c76e0a">
+                    <th><center><input type=button name=Vban value='Ver' onclick="verBandera()">&nbsp; &nbsp;&nbsp; &nbsp;<input type=button name=Oban value='Ocultar' onclick="ocultarBandera()"></center></th>
+                    <th><center><input type=button name=Vesc value='Ver' onclick="verEscudo()">&nbsp; &nbsp;&nbsp; &nbsp;<input type=button name=Oesc value='Ocultar' onclick="ocultarEscudo()"></center></th>
+                </tr>
+                <tr height="6%" bgcolor="#c76e0a">
+                    <th> Datos </th>
+                    <th> Himno  </th>
+                </tr>
+                <tr bgcolor="#ea9744">
+                    <th>
+                        <select name=dat onclick="datos()">
+                        <option>-- seleccione opcion               --</option>
+                        <option>-- Tamaño                          --</option>
+                        <option>-- Población                       --</option>
+                        <option>-- Madrid alberga el restaurante más antiguo del mundo                --</option>
+                        <option>-- El islam en España              --</option>
+                        <option>-- Canivalismo en españa? --</option>  
+                    </select>
+                    <br><br><br>
+                    <textarea name=info cols=30 rows=15></textarea>
+                    <br><br><br><br><br><br>
+                    </th>
+                    <th>
+                        <textarea name=himn cols=30 rows=20>Desea ver el himno?</textarea>
+                        <br><br><br>
+                        <input type=button name=Esp value='Si' onclick="HimnoEsp()">&nbsp; &nbsp;&nbsp; &nbsp;<input type=button name=ocuH value='Ocultar' onclick="ocultarHimno()">
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
+
+<!--Hecho por Luis Martinez-->

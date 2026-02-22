@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francia</title>
+    <script language="javascript">
+        function verBand(){
+                document.for.im1.width = 200
+                document.for.im1.height= 140
+        }//Cierre función verBand
+        function ocultBand(){
+                document.for.im1.width = 0
+                document.for.im1.height= 0
+        }//Cierre función ocultBand
+        function verEsc(){
+                document.for.im2.width = 200
+                document.for.im2.height= 180
+        }//Cierre función verEsc
+        function ocultEsc(){
+                document.for.im2.width = 0
+                document.for.im2.height= 0
+        }//Cierre función ocultarEscudo
+        function Himno(){
+            document.for.himn.value="Il Canto degli Italiani (Fratelli d'Italia)\n\nI\n\nFratelli d'Italia,\nl'Italia s'è desta,\ndell'elmo di Scipio\ns'è cinta la testa.\nDov'è la Vittoria?\nLe porga la chioma,\nché schiava di Roma\nIddio la creò.\n\nCoro\n\nStringiamci a coorte,\nsiam pronti alla morte.\nSiam pronti alla morte,\nl'Italia chiamò, sì!\n\nII\n\nNoi fummo da secoli\ncalpesti, derisi,\nperché non siam popolo,\nperché siam divisi.\nRaccolgaci un'unica\nBandiera, una speme:\ndi fonderci insieme\ngià l'ora suonò.\n\nCoro\n\nStringiamci a coorte,\nsiam pronti alla morte.\nSiam pronti alla morte,\nl'Italia chiamò, sì!\n\nIII\n\nUniamoci, amiamoci,\nl'Unione e l'amore\nrivelano ai Popoli\nle vie del Signore.\nGiuriamo far libero\nil suolo natìo:\nuniti, per Dio,\nchi vincer ci può?\n\nCoro\n\nStringiamci a coorte,\nsiam pronti alla morte.\nSiam pronti alla morte,\nl'Italia chiamò, sì!\n\nIV\n\nDall'Alpi a Sicilia,\ndovunque è Legnano,\nogn'uom di Ferruccio\nha il core, ha la mano,\ni bimbi d'Italia\nsi chiaman Balilla,\nil suon d'ogni squilla\ni Vespri suonò.\n\nCoro\n\nStringiamci a coorte,\nsiam pronti alla morte.\nSiam pronti alla morte,\nl'Italia chiamò, sì!\n\nV\n\nSon giunchi che piegano\nle spade vendute:\ngià l'Aquila d'Austria\nle penne ha perdute.\nIl sangue d'Italia,\nil sangue Polacco,\nbevé, col cosacco,\nma il cor le bruciò.\n\nCoro\n\nStringiamci a coorte,\nsiam pronti alla morte.\nSiam pronti alla morte,\nl'Italia chiamò, sì!\n\nVI\n\nEvviva l'Italia,\ndal sonno s'è desta,\ndell'elmo di Scipio\ns'è cinta la testa.\nDov'è la Vittoria?\nLe porga la chioma,\nché schiava di Roma\nIddio la creò.\n\nCoro\n\nStringiamci a coorte,\nsiam pronti alla morte.\nSiam pronti alla morte,\nl'Italia chiamò, sì!"
+        }//Cierre función Himno
+        function ocultHimno(){
+            document.for.himn.value=""
+        }//Cierre función ocultHimno
+        function datos(){
+            if(document.for.ver.selectedIndex==0){
+                document.for.info.value=""
+            }else{
+                if(document.for.ver.selectedIndex==1){
+                    document.for.info.value="Italia tiene un tamaño o superficie total de aproximadamente 301,338 kilómetros cuadrados. El territorio incluye tres áreas geográficas: continental, peninsular e insular, destacándose que incluye las islas mayores del Mediterráneo como Sicilia y Cerdeña. Esta superficie coloca a Italia entre los países relativamente medianos en Europa por tamaño territorial."
+                }else{
+                    if(document.for.ver.selectedIndex==2){
+                        document.for.info.value="La población de Italia en el año 2025 se estima alrededor de 59 millones de habitantes. Según datos recientes del ISTAT y otras fuentes estadísticas, la cifra específica ronda entre 58.9 y 59.1 millones de personas, con una densidad poblacional cercana a 195 habitantes por km². Además, se observa una tendencia de crecimiento negativa con una tasa anual de alrededor de -0.3% a -0.35% en los últimos años, evidenciando un ligero decrecimiento poblacional en Italia para 2025."
+                    }else{
+                        if(document.for.ver.selectedIndex==3){
+                            document.for.info.value="Italia es el país con más sitios declarados Patrimonio de la Humanidad por la UNESCO en el mundo, con un total de 61 sitios reconocidos a septiembre de 2025. Estos incluyen 55 sitios culturales y 6 naturales, repartidos a lo largo de la península y sus islas, abarcando desde ciudades de arte, paisajes naturales, hasta monumentos históricos y arqueológicos. Esta cifra supera a la de cualquier otro país, consolidando a Italia como un líder mundial en patrimonio cultural y natural protegido por la UNESCO."
+                        }else{
+                            if(document.for.ver.selectedIndex==4){
+                                document.for.info.value="La Ciudad del Vaticano, el estado soberano más pequeño del mundo, tiene una superficie de aproximadamente 0.44 kilómetros cuadrados (44 hectáreas). Está completamente enclavado dentro de la ciudad de Roma, Italia. A pesar de su pequeño tamaño, es un estado independiente con gran relevancia histórica, cultural y religiosa, siendo el centro espiritual de la Iglesia Católica."
+                            }else{
+                                if(document.for.ver.selectedIndex==5){
+                                    document.for.info.value="La Antica Pizzeria Port'Alba, ubicada en Nápoles, abrió sus puertas en 1830 y es considerada la primera pizzería del mundo. Originalmente, comenzó en 1738 como un puesto para vendedores ambulantes que preparaban pizzas en hornos de leña para vender en las calles, y en 1830 se estableció como una pizzería fija en la vía Port'Alba. Fue un lugar de encuentro popular para artistas, estudiantes y personas de clase humilde, con pizzas generalmente simples. Desde entonces, esta pizzería sigue en funcionamiento y es un símbolo histórico de la tradición napolitana de la pizza."
+                                }else{
+                                    if(document.for.ver.selectedIndex==6){
+                                        document.for.info.value="En Milán existe una ley del siglo XIX, de la época austrohúngara, que obliga a los ciudadanos a sonreír en todo momento, excepto en funerales o visitas al hospital. Esta ley no ha sido derogada y establece multas para quienes no cumplan con esta obligación, salvo las excepciones mencionadas. Es una ley considerada curiosa y poco común, que prescribe que no hay excusa para estar triste en la ciudad, salvo en casos de duelo o enfermedad cercana."
+                                    }else{
+                                        if(document.for.ver.selectedIndex==7){
+                                            document.for.info.value="Para los italianos, el número 17 es considerado de mala suerte, no el 13. Esta creencia se basa en que el número 17, escrito en números romanos como XVII, puede reorganizarse para formar la palabra latina ''VIXI,'' que significa ''he vivido'', implicando simbólicamente ''estoy muerto.'' Esta asociación con la muerte hace que el 17 sea un número temido, especialmente cuando cae en viernes, día también considerado de mala suerte. En Italia, muchos evitan eventos importantes en viernes 17, y es común que edificios, hoteles y aviones no tengan el número 17 para evitar la mala fortuna vinculada a este número."
+                                        }
+                                    }//Cierre else 7
+                                }//Cierre else 6
+                            }//Cierre else 5
+                        }//Cierre else 4
+                    }//Cierre else 3
+                }//Cierre else 2
+            }//Cierre else 1
+        }//Cierre función datos
+    </script>
+</head>
+<body>
+    <center>
+        <form name="for">
+            <table width=600 height=850 border=1 bordercolor=black align=center>
+                <tr bgcolor="#b30000">
+                    <th colspan="2"><h1>Italia</h1></th>
+                </tr>
+                <tr height="6%" bgcolor="#b30000">
+                    <th> Bandera </th>
+                    <th> Escudo  </th>
+                </tr>
+                <tr height="25%" bgcolor="#d33131">
+                    <th><img src="img_pais/Bandera_italia.jpeg" id="im1" width="0" height="0"></th>
+                    <th><img src="img_pais/Escudo_italia.jpeg" id="im2" width="0" height="0"></th>
+                </tr>
+                <tr height="6%" bgcolor="#b30000">
+                    <th><center><input type=button name=Vban value='Ver' onclick="verBand()">&nbsp; &nbsp;&nbsp; &nbsp;<input type=button name=Oban value='Ocultar' onclick="ocultBand()"></center></th>
+                    <th><center><input type=button name=Vesc value='Ver' onclick="verEsc()">&nbsp; &nbsp;&nbsp; &nbsp;<input type=button name=Oesc value='Ocultar' onclick="ocultEsc()"></center></th>
+                </tr>
+                <tr height="6%" bgcolor="#b30000">
+                    <th> Datos </th>
+                    <th> Himno  </th>
+                </tr>
+                <tr bgcolor="#d33131">
+                    <th>
+                        <select name=ver onclick="datos()">
+                        <option>seleccione opcion</option>
+                        <option>Tamaño de italia</option>
+                        <option>Población de italia</option>
+                        <option>Líder en Patrimonio de la Humanidad</option>
+                        <option>Un país dentro de otro país</option>
+                        <option>La primera pizzería del mundo</option>
+                        <option>La ley de la sonrisa</option>
+                        <option>El número de la mala suerte</option>
+                    </select>
+                    <br><br>
+                    <textarea name=info cols=30 rows=15></textarea>
+                    <br><br><br><br>
+                    </th>
+                    <th>
+                        <textarea name=himn cols=30 rows=20></textarea>
+                        <br>
+                        <input type=button name=himno value='ver' onclick="Himno()">&nbsp; &nbsp;&nbsp; &nbsp;<input type=button name=oculH value='Ocultar' onclick="ocultHimno()">
+                    </th>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
+<!--Hecho por Jim Alejandro Quiñones Martinez-->

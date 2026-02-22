@@ -1,0 +1,33 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones aritmeticas</title>
+    <script language = "javascript">
+        //Pedir numeros al usuario
+        num1 = prompt("Digite el primer numero: ")
+        num2 = prompt("Digite el segundo numero: ")
+        
+        //Volver variables a enteros
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+
+        //Operaciones
+        sum = num1+num2
+        res = num1-num2
+        mul = num1*num2
+        div = num1/num2
+        pot = num1**num2
+        residuo = num1%num2
+
+        //Mostrar resultado
+        alert("La suma de los numeros "+num1+" y "+num2+" es: "+sum)
+        alert("La resta de los numeros "+num1+" y "+num2+" es: "+res)
+        alert("La multiplicacion de los numeros "+num1+" por "+num2+" es: "+mul)
+        alert("La division del numero "+num1+" entre "+num2+" es: "+div)
+        alert("La potencia del numero "+num1+" elevado a "+num2+" es: "+pot)
+        alert("El residuo del numero "+num1+" entre el "+num2+" es: "+residuo)
+
+    </script>
+</head>

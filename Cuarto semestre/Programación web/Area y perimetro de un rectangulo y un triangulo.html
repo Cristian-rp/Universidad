@@ -1,0 +1,38 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area y perimetro de un rectangulo y un triangulo equilatero</title>
+    <script language = "javascript">
+        //Pedir medidas rectangulo
+        base_rec = parseFloat(prompt("Ingrese la base del rectangulo"))
+        altura_rec = parseFloat(prompt("Ingrese la altura del rectangulo"))
+        //Calcular Area
+        area_rec = base_rec*altura_rec
+        //alert("El área es: "+area_rec)
+        //Calcular Perimetro
+        perimetro_rec = (base_rec*2)+(altura_rec*2)
+        //alert("El perimetro es: "+perimetro_rec)
+        //Pedir medidas del triangulo
+        base_tri = parseFloat(prompt("Ingrese la base del triangulo"))
+        altura_tri = parseFloat(prompt("Ingrese la altura del triangulo"))
+        //Calcular Area
+        area_tri = (base_tri*altura_tri)/2
+        //alert("El área es: "+area_tri) 
+        document.write("<center><table border=1 bordercolor=green width=600 height=300 cellspacing=2 style='text-align: center;'>")
+        document.write("<tr bgcolor=#adf7b6><td colspan=2>Rectangulo</td></tr>")      
+        document.write("<tr bgcolor=#FFF5EE><td>Base</td><td>"+base_rec+"</td></tr>")      
+        document.write("<tr bgcolor=#FFF5EE><td>altura</td><td>"+altura_rec+"</td></tr>")      
+        document.write("<tr bgcolor=#adf7b6><td>Area</td><td>Perimeto</td></tr>")      
+        document.write("<tr bgcolor=#FFF5EE><td>"+area_rec+"</td><td>"+perimetro_rec+"</td></tr>")      
+        document.write("<tr bgcolor=#FFF5EE><td colspan=2 bgcolor=#adf7b6>Triangulo</td></tr>")      
+        document.write("<tr bgcolor=#FFF5EE><td>Base</td><td>"+base_tri+"</td></tr>")      
+        document.write("<tr bgcolor=#FFF5EE><td>Altura</td><td>"+altura_tri+"</td></tr>")      
+        document.write("<tr bgcolor=#FFF5EE><td colspan=2 bgcolor=#adf7b6>Area</td></tr>")      
+        document.write("<tr bgcolor=#FFF5EE><td colspan=2>"+area_tri+"</td></tr></table>")       
+    </script>
+</head>
+<body>
+            
+</body>
