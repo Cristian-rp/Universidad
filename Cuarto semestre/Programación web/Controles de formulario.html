@@ -1,0 +1,81 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controles de formularios</title>
+    <script language = "javascript"> 
+    
+    </script>
+</head>
+<body>
+    <center>
+        <br><br><br>
+        <form name=form action='Respuesta_formulario.html'>
+        <table width=450 height=650 border=1 bordercolor=blue align=center>
+            <tr>
+                <th colspan=2 bgcolor="#157fad">CONTROLES DE FORMULARIO</th>
+            </tr>
+            <tr>
+                <th>Caja de Texto</th>
+                <th><input type=text name=Texto size=20></th>
+            </tr>
+            <tr>
+                <th>Caja de contraseña</th>
+                <th><input type=password name=password size=20></th>
+            </tr>
+            <tr>
+                <th>Area de texto</th>
+                <th><textarea name=TextArea cols=15 rows=5></textarea></th>
+            </tr>
+            <tr>
+                <th>Opcion radio</th>
+                <th>opcion 1 <input type=radio name=opr><br>
+                    opcion 2 <input type=radio name=opr><br>
+                    opcion 3 <input type=radio name=opr><br>
+                    opcion 4 <input type=radio name=opr><br>  
+                </th>
+            </tr>
+            <tr>
+                <th>Opcion de chequo</th>
+                <th>opcion 1 <input type=checkbox name=opc><br>
+                    opcion 2 <input type=checkbox name=opc><br>
+                    opcion 3 <input type=checkbox name=opc><br>
+                    opcion 4 <input type=checkbox name=opc><br>  
+                </th>
+            </tr>
+            <tr>
+                <th>Lista desplegable</th>
+                <th>
+                    <select name=ver onclick=>
+                        <option>--seleccione opcion--</option>
+                        <option>--opcion 1--</option>
+                        <option>--opcion 2--</option>
+                        <option>--opcion 3--</option>
+                        <option>--opcion 4--</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th>Adjuntar archivo</th>
+                <th><input type=file name=adj></th>
+            </tr>
+            <tr>
+                <th>Control fecha</th>
+                <th><input type=date name=fec></th>
+            </tr>
+            <tr>
+                <th>Control calcular</th>
+                <th><input type=button name=cal value='Calular dato'></th>
+            </tr>
+            <tr>
+                <th>Control limpiar</th>
+                <th><input  type=reset name=limp value='Limpiar datos'></th>
+            </tr>
+            <tr>
+                <th>Control enviar</th>
+                <th><input type=submit name=envi value='enviar datos'></th>
+            </tr>
+        </table>  
+        </form>    
+</body>

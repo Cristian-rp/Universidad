@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia personajes</title>
+    <script language="javascript">
+        function mostrar(){
+            if(document.for.ver.selectedIndex==0){
+                document.for.info.value=""
+                document.for.im1.width = 0
+                document.for.im1.height= 0
+                document.for.im2.width = 0
+                document.for.im2.height= 0
+                document.for.im3.width = 0
+                document.for.im3.height= 0
+                document.for.im4.width = 0
+                document.for.im4.height= 0
+            }else{
+                if(document.for.ver.selectedIndex==1){
+                    document.for.info.value="Gustavo Petro es el presidente de Colombia desde agosto de 2022, conocido por ser el primer mandatario de izquierda del país. Economista de formación, ha impulsado reformas sociales, ambientales y económicas con un enfoque progresista.";
+                    document.for.im1.width = 180
+                    document.for.im1.height= 240
+                    document.for.im2.width = 0
+                    document.for.im2.height= 0
+                    document.for.im3.width = 0
+                    document.for.im3.height= 0
+                    document.for.im4.width = 0
+                    document.for.im4.height= 0
+                }else{
+                    if(document.for.ver.selectedIndex==2){
+                        document.for.info.value="Andrés Pastrana fue presidente de Colombia entre 1998 y 2002, conocido por liderar el Plan Colombia contra el narcotráfico y los intentos de paz con las FARC. Fue el primer alcalde de Bogotá elegido por voto popular y tiene una carrera destacada en diplomacia y política conservadora.";
+                        document.for.im1.width = 0
+                        document.for.im1.height= 0
+                        document.for.im2.width = 180
+                        document.for.im2.height= 240
+                        document.for.im3.width = 0
+                        document.for.im3.height= 0
+                        document.for.im4.width = 0
+                        document.for.im4.height= 0
+                    }else{
+                        if(document.for.ver.selectedIndex==3){
+                            document.for.info.value="César Gaviria fue presidente de Colombia entre 1990 y 1994, destacado por liderar un proceso de paz y la Asamblea Constituyente que produjo la Constitución de 1991. Su gobierno enfrentó la violencia de narcotraficantes y grupos armados, además de impulsar la apertura económica del país.";
+                            document.for.im1.width = 0
+                            document.for.im1.height= 0
+                            document.for.im2.width = 0
+                            document.for.im2.height= 0
+                            document.for.im3.width = 180
+                            document.for.im3.height= 240
+                            document.for.im4.width = 0
+                            document.for.im4.height= 0
+                        }else{
+                            if(document.for.ver.selectedIndex==4){
+                            document.for.info.value="Ernesto Samper fue presidente de Colombia entre 1994 y 1998, su gobierno se caracterizó por un enfoque social moderado con inversiones en educación, salud y empleo, y la creación del Sisbén. Su mandato estuvo marcado por el escándalo del Proceso 8000, relacionado con la financiación ilícita de su campaña por parte del narcotráfico, lo que generó una crisis política y diplomática significativa.";
+                            document.for.im1.width = 0
+                            document.for.im1.height= 0
+                            document.for.im2.width = 0
+                            document.for.im2.height= 0
+                            document.for.im3.width = 0
+                            document.for.im3.height= 0
+                            document.for.im4.width = 180
+                            document.for.im4.height= 240
+                            }
+                        }//Cierre else 4
+                    }//Cierre else 3
+                }//Cierre else 2
+            }//Cierre else 1
+        }//Cierre funcion mostrar
+    </script>
+</head>
+<body>
+    <center>
+        <form name="for">
+        <table width=600 height=450 border=1 bordercolor=black align=center>
+            <tr>
+                <th colspan=2 height=100 bgcolor="#157fad"><h1> Personajes Historicos </h1></th>
+            </tr>
+            <tr bgcolor="#7ec7eb">
+                <th rowspan=2 width=50%>
+                    <img src="Img biografia personajes/Petro.jpeg" id="im1" width=0 height=0>
+                    <img src="Img biografia personajes/Andrés Pastrana Arango.jpeg" id="im2" width=0 height=0>
+                    <img src="Img biografia personajes/Cesar Gaviria.jpeg" id="im3" width=0 height=0>
+                    <img src="Img biografia personajes/Ernesto Samper Pizano.jpeg" id="im4" width=0 height=0>
+                </th>
+                <th>
+                     <select name=ver onclick="mostrar()">
+                        <option>-- seleccione opcion --</option>
+                        <option>-- Gustavo Petro     --</option>
+                        <option>-- Andrés Pastrana   --</option>
+                        <option>-- Cesar Gaviria     --</option>
+                        <option>-- Ernesto Samper    --</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th bgcolor="#7ec7eb"><textarea name=info cols=20 rows=10></textarea></th>
+            </tr>
+        </table>
+        </form>
+    </center>
+</body>
+</html>

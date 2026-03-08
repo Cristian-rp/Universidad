@@ -1,0 +1,9 @@
+# Mi carpeta privada que no se sube a GitHub
+Privado/
+# Ignorar carpetas de compilación de Android
+**/build/
+**/.gradle/
+**/.idea/
+**/captures/
+local.properties
+*.mp4

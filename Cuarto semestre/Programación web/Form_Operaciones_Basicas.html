@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Operaciones Basicas</title>
+    <script language="javascript">
+        function calcular(){
+            //Captura de datos
+            n1= document.form.num1.value
+            n2= document.form.num2.value
+
+            //Proceso
+            suma=parseInt(n1)+parseInt(n2)
+            resta=n1-n2
+            multiplicacion=n1*n2
+            division=n1/n2
+            potencia=n1**n2
+            modulo=n1%n2
+            raiz=Math.sqrt(n1)
+
+            //Salida de datos
+            document.form.sum.value = suma
+            document.form.res.value = resta
+            document.form.mul.value = multiplicacion
+            document.form.div.value = division
+            document.form.pot.value = potencia
+            document.form.mod.value = modulo
+            document.form.rai.value = raiz
+        }//cierre función
+    </script>
+</head>
+<body>
+    <center>
+        <form name=form action="">
+        <table width=600 height=400 border=1 bordercolor=black align=center>
+            <tr>
+                <th colspan=2 height=100 bgcolor=#F56C27>Suma de dos números</th>
+            </tr>
+            <tr bgcolor="#ffb691">
+                <th>Número 1<br>
+                <input type=text name=num1 size=20><br><br>
+                Número 2<br>
+                <input type=text name=num2 size=20>
+                </th>
+                <th>
+                Suma <input type=number name=sum size=20><br><br>
+                Resta <input type=number name=res size=20><br><br>
+                Multiplicacion <input type=number name=mul size=20><br><br>
+                División <input type=number name=div size=20><br><br>
+                Potencia <input type=number name=pot size=20><br><br>
+                Modulo <input type=number name=mod size=20><br><br>
+                Raiz <input type=number name=rai size=20><br><br>
+                </th>
+            </tr>
+            <tr bgcolor=#F56C27>
+                <th colspan=2 height=80><input type=button name=cal value='Calular' onclick='calcular()'> <input type=reset name=limp value='Iniciar'></th>
+            </tr>
+        </table>
+        </form>
+    </center>
+</body>
+</html>

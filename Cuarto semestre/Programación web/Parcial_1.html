@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturas tienda de ropa</title>
+    <script language="javascript">
+        function camisa(){
+            //Funciones para categoria y valor
+            if(document.for.cami.selectedIndex==0){
+                document.for.cat1.value="SELECCIONE OPCION"
+            }else{
+                if(document.for.cami.selectedIndex==1){
+                    document.for.cat1.value="Casual"
+                    document.for.val1.value="25000"
+                }else{
+                    if(document.for.cami.selectedIndex==2){
+                        document.for.cat1.value="Semiformal"
+                        document.for.val1.value="30000"
+                    }else{
+                        if(document.for.cami.selectedIndex==3){
+                            document.for.cat1.value="Formal"
+                            document.for.val1.value="40000"
+                        }else{
+                            if(document.for.cami.selectedIndex==4){
+                                document.for.cat1.value="Elegante"
+                                document.for.val1.value="55000"
+                            }else{
+                                if(document.for.cami.selectedIndex==5){
+                                    document.for.cat1.value="Deportivo"
+                                    document.for.val1.value="35000"
+                                }
+                            }//Cierre else 5
+                        }//Cierre else 4
+                    }//Cierre else 3
+                }//Cierre else 2
+            }//Cierre else 1
+        }//Cierre funcion camisa
+        function pantalon(){
+            if(document.for.pant.selectedIndex==0){
+                document.for.cat2.value="SELECCIONE OPCION"
+            }else{
+                if(document.for.pant.selectedIndex==1){
+                    document.for.cat2.value="Casual"
+                    document.for.val2.value="25000"
+                }else{
+                    if(document.for.pant.selectedIndex==2){
+                        document.for.cat2.value="Deportivo"
+                        document.for.val2.value="35000"
+                    }else{
+                        if(document.for.pant.selectedIndex==3){
+                            document.for.cat2.value="Semiformal"
+                            document.for.val2.value="30000"
+                        }else{
+                            if(document.for.pant.selectedIndex==4){
+                                document.for.cat2.value="Elegante"
+                                document.for.val2.value="55000"
+                            }else{
+                                if(document.for.pant.selectedIndex==5){
+                                    document.for.cat2.value="Deportivo"
+                                    document.for.val2.value="35000"
+                                }
+                            }//Cierre else 5
+                        }//Cierre else 4
+                    }//Cierre else 3
+                }//Cierre else 2
+            }//Cierre else 1
+        }//Cierre funcion pantalo
+        function zapato(){
+            if(document.for.zapa.selectedIndex==0){
+                document.for.cat3.value="SELECCIONE OPCION"
+            }else{
+                if(document.for.zapa.selectedIndex==1){
+                    document.for.cat3.value="Casual"
+                    document.for.val3.value="25000"
+                }else{
+                    if(document.for.zapa.selectedIndex==2){
+                        document.for.cat3.value="Casual"
+                        document.for.val3.value="25000"
+                    }else{
+                        if(document.for.zapa.selectedIndex==3){
+                            document.for.cat3.value="Casual"
+                            document.for.val3.value="25000"
+                        }else{
+                            if(document.for.zapa.selectedIndex==4){
+                                document.for.cat3.value="Elegante"
+                                document.for.val3.value="55000"
+                            }else{
+                                if(document.for.zapa.selectedIndex==5){
+                                    document.for.cat3.value="Deportivo"
+                                    document.for.val3.value="35000"
+                                }
+                            }//Cierre else 5
+                        }//Cierre else 4
+                    }//Cierre else 3
+                }//Cierre else 2
+            }//Cierre else 1
+        }//Cierre funcion zapatos
+        function abrigo(){
+            if(document.for.abri.selectedIndex==0){
+                document.for.cat4.value="SELECCIONE OPCION"
+            }else{
+                if(document.for.abri.selectedIndex==1){
+                    document.for.cat4.value="Casual"
+                    document.for.val4.value="25000"
+                }else{
+                    if(document.for.abri.selectedIndex==2){
+                        document.for.cat4.value="Casual"
+                        document.for.val4.value="25000"
+                    }else{
+                        if(document.for.abri.selectedIndex==3){
+                            document.for.cat4.value="Semiformal"
+                            document.for.val4.value="30000"
+                        }else{
+                            if(document.for.abri.selectedIndex==4){
+                                document.for.cat4.value="Elegante"
+                                document.for.val4.value="55000"
+                            }else{
+                                if(document.for.abri.selectedIndex==5){
+                                    document.for.cat4.value="Deportivo"
+                                    document.for.val4.value="35000"
+                                }
+                            }//Cierre else 5
+                        }//Cierre else 4
+                    }//Cierre else 3
+                }//Cierre else 2
+            }//Cierre else 1
+        }//Cierre funcion abrigo
+        function vestido(){
+            if(document.for.vest.selectedIndex==0){
+                document.for.cat5.value="SELECCIONE OPCION"
+            }else{
+                if(document.for.vest.selectedIndex==1){
+                    document.for.cat5.value="Casual"
+                    document.for.val5.value="25000"
+                }else{
+                    if(document.for.vest.selectedIndex==2){
+                        document.for.cat5.value="Semiformal"
+                        document.for.val5.value="30000"
+                    }else{
+                        if(document.for.vest.selectedIndex==3){
+                            document.for.cat5.value="Formal"
+                            document.for.val5.value="40000"
+                        }else{
+                            if(document.for.vest.selectedIndex==4){
+                                document.for.cat5.value="Elegante"
+                                document.for.val5.value="55000"
+                            }else{
+                                if(document.for.vest.selectedIndex==5){
+                                    document.for.cat5.value="Deportivo"
+                                    document.for.val5.value="35000"
+                                }
+                            }//Cierre else 5
+                        }//Cierre else 4
+                    }//Cierre else 3
+                }//Cierre else 2
+            }//Cierre else 1
+        }//Cierre funcion Vestido
+
+        //Funcion Total Tabla
+        function totalCamisa(){
+            //Captura de datos
+            valor=document.for.val1.value
+            cantidad=document.for.can1.value
+
+            //Proceso
+            totalC=valor*cantidad
+
+            //Salida
+            document.for.tot1.value=totalC
+        }//Cierre funcion camisa
+        function totalPantalon(){
+            //Captura de datos
+            valor=document.for.val2.value
+            cantidad=document.for.can2.value
+
+            //Proceso
+            totalP=valor*cantidad
+
+            //Salida
+            document.for.tot2.value=totalP
+        }//Cierre funcion pantalon
+        function totalZapato(){
+            //Captura de datos
+            valor=document.for.val3.value
+            cantidad=document.for.can3.value
+
+            //Proceso
+            totalZ=valor*cantidad
+
+            //Salida
+            document.for.tot3.value=totalZ
+        }//Cierre funcion zapato
+        function totalAbrigo(){
+            //Captura de datos
+            valor=document.for.val4.value
+            cantidad=document.for.can4.value
+
+            //Proceso
+            totalA=valor*cantidad
+
+            //Salida
+            document.for.tot4.value=totalA
+        }//Cierre funcion abrigo
+        function totalVestido(){
+            //Captura de datos
+            valor=document.for.val5.value
+            cantidad=document.for.can5.value
+
+            //Proceso
+            totalV=valor*cantidad
+
+            //Salida
+            document.for.tot5.value=totalV
+        }//Cierre funcion vestido
+        
+        //funcion subtotal, total y descuento
+        function subtotal(){
+            //Captura de datos
+            t1=parseInt(document.for.tot1.value)
+            t2=parseInt(document.for.tot2.value)
+            t3=parseInt(document.for.tot3.value)
+            t4=parseInt(document.for.tot4.value)
+            t5=parseInt(document.for.tot5.value)
+            //Proceso
+            sub=t1+t2+t3+t4+t5
+            //Salida
+            document.for.subt.value=sub
+        }//Cierre funcion subtotal
+        function Total(){
+            //captura de datos
+            sub=parseInt(document.for.subt.value)
+
+            //proceso
+            //Descuentos
+            if(sub<50000){
+                Des=(sub*0)/100
+                document.for.porde.value="0%"
+            }else{
+                if(sub>50000 && sub<=100000){
+                    Des=(sub*1)/100
+                    document.for.porde.value="1%"
+                }else{
+                    if(sub>100000 && sub<=200000){
+                        Des=(sub*2)/100
+                        document.for.porde.value="2%"
+                    }else{
+                        if(sub>200000 && sub<=300000){
+                            Des=(sub*3)/100
+                            document.for.porde.value="3%"
+                        }else{
+                            if(sub>300000 && sub<=500000){
+                                Des=(sub*4)/100
+                                document.for.porde.value="4%"
+                            }else{
+                                if(sub>500000){
+                                    Des=(sub*5)/100
+                                    document.for.porde.value="5%"
+                                }
+                            }//cierre else 5
+                        }//cierre else 4
+                    }//cierre else 3
+                }//cierre else 2
+            }//cierre else 1
+
+            //Total
+            TotalAbsoluto=sub-Des
+            //salida
+            document.for.decu.value=Des
+            document.for.total.value=TotalAbsoluto
+        }
+    </script>
+</head>
+<body>
+        <form name="for" action="">
+            <p align="center" style="font-size:45px; color:rgb(76, 138, 238)">FACTURA TIENDA DE ROPA</p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            CLIENTE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type=text name=nomb size=30 value="Nombre">&nbsp;
+            <input type=text name=apell size=30 value="Apellido">&nbsp;
+            <input type=text name=numer size=30 value="Número">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            EMPLEADO<select name=empl>
+                        <option>seleccione opcion</option>
+                        <option>Empleado 1</option>
+                        <option>Empleado 2</option>
+                    </select><br><br>
+            <center>
+                <table align="center" width="1400" height="400"border=1>
+                    <tr height="10%" bgcolor="#eee8e7">
+                        <th>Descripción</th> 
+                        <th>Categoría</th> 
+                        <th>Valor/U</th> 
+                        <th>Cantidad</th> 
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <select name=cami onclick="camisa()">
+                                <option>seleccione opcion</option>
+                                <option>Camiseta Cuello Redondo</option>
+                                <option>Camiseta Manga Corta</option>
+                                <option>Camisa formal</option>
+                                <option>Blusa Elegante</option>
+                                <option>Camiseta Deportiva</option>
+                            </select></th>
+                        <th><input type=text name=cat1 size=20 value="SELECCIONE OPCION" style="border: none;"></th>
+                        <th><input type=text name=val1 size=20 style="background-color: #eee8e7;"></th>
+                        <th><input type=text name=can1 size=20 value="1"></th>
+                        <th><input type=text name=tot1 size=20 style="background-color: #eee8e7;"></th>
+                    </tr>
+                        <th>
+                            <select name=pant onclick="pantalon()">
+                                <option>seleccione opcion</option>
+                                <option>Jeans Clásicos</option>
+                                <option>Pantaloneta</option>
+                                <option>Pantalón de Tela</option>
+                                <option>Pantalón de Traje</option>
+                                <option>Pantalón de Entrenamiento</option>
+                            </select>
+                        </th>
+                        <th><input type=text name=cat2 size=20 value="SELECCIONE OPCION" style="border: none;" ></th>
+                        <th><input type=text name=val2 size=20 style="background-color: #eee8e7;" ></th>
+                        <th><input type=text name=can2 size=20 value="1"></th>
+                        <th><input type=text name=tot2 size=20 style="background-color: #eee8e7;"></th>
+                    </tr>
+                        <th>
+                            <select name=zapa onclick="zapato()">
+                                <option>seleccione opcion</option>
+                                <option>Zapatos Casuales</option>
+                                <option>Tenis</option>
+                                <option>Bota</option>
+                                <option>Zapato de Vestir</option>
+                                <option>Tenis deportivos</option>
+                            </select></th>
+                        <th><input type=text name=cat3 size=20 value="SELECCIONE OPCION"readonly style="border: none;" ></th>
+                        <th><input type=text name=val3 size=20 style="background-color: #eee8e7;" readonly></th>
+                        <th><input type=text name=can3 size=20 value="1"></th>
+                        <th><input type=text name=tot3 size=20 style="background-color: #eee8e7;" readonly></th>
+                    </tr>
+                        <th>
+                            <select name=abri onclick="abrigo()">
+                                <option>seleccione opcion</option>
+                                <option>Chaqueta de Jean</option>
+                                <option>Chaqueta Acolchada</option>
+                                <option>Blazer</option>
+                                <option>Abrigo de Paño</option>
+                                <option>Chaqueta Impermeable</option>
+                            </select></th>
+                        <th><input type=text name=cat4 size=20 value="SELECCIONE OPCION"readonly style="border: none;"></th>
+                        <th><input type=text name=val4 size=20 style="background-color: #eee8e7;" readonly></th>
+                        <th><input type=text name=can4 size=20 value="1"></th>
+                        <th><input type=text name=tot4 size=20 style="background-color: #eee8e7;" readonly></th>
+                    </tr>
+                        <th>
+                            <select name=vest onclick="vestido()">
+                                <option>seleccione opcion</option>
+                                <option>Vestido Corto</option>
+                                <option>Vestido de Lana</option>
+                                <option>Falda larga</option>
+                                <option>Vestido de Gala</option>
+                                <option>Falda Deportiva</option>
+                            </select></th>
+                        <th><input type=text name=cat5 size=20 value="SELECCIONE OPCION"readonly style="border: none;" ></th>
+                        <th><input type=text name=val5 size=20 style="background-color: #eee8e7;" readonly></th>
+                        <th><input type=text name=can5 size=20 value="1"></th>
+                        <th><input type=text name=tot5 size=20 style="background-color: #eee8e7;" readonly></th>
+                    </tr>
+                </table>
+            </center>
+            <br>
+            <table align="center" width="1400" height="50">
+                <tr>
+                    <th colspan="3" align="left">Subotal $ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=text name=subt size=30 value=""></th>
+                    <th>Total $</th>
+                    <th width="20%">
+                        <input type=text name=porde size=10 value="">
+                        <input type=text name=total size=20 value="">
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="5" align="left">Descuento $&nbsp;&nbsp;<input type=text name=decu size=30 value=""></th>
+                </tr>
+                <tr>
+                    <th colspan="5"><input type=button name=calc value='Calcular' onclick="totalCamisa(); totalPantalon(); totalZapato(); totalAbrigo(); totalVestido(); subtotal(); Total()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=reset name=limp value='Limpiar'></th>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
+
+
+<!--Hecho por Cristian Esteban Ruiz Parra-->

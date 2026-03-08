@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <!-- TextView donde va a aparecer el nombre (invisible al inicio) -->
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Botón que el usuario va a tocar para mostrar su nombre -->
+    <Button
+        android:id="@+id/btnMostrarNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar mi nombre"
+        android:textSize="18sp"
+        android:padding="15dp"/>
+
+</LinearLayout>

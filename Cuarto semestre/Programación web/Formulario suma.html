@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de dos números</title>
+    <script language="javascript">
+        function calcular(){
+            //Captura de datos
+            n1= document.form.num1.value
+            n2= document.form.num2.value
+
+            //Proceso
+            sum= parseInt(n1)+parseInt(n2)
+
+            //Salida de datos
+            document.form.resul.value = sum
+        }//cierre función
+    </script>
+</head>
+<body>
+    <center>
+        <form name=form action="">
+        <table width=600 height=400 border=1 bordercolor=black align=center>
+            <tr>
+                <th colspan=2 height=100 bgcolor=#F56C27>Suma de dos números</th>
+            </tr>
+            <tr>
+                <th>Número 1<br>
+                <input type=text name=num1 size=20><br><br>
+                Número 2<br>
+                <input type=text name=num2 size=20>
+                </th>
+                <th>Resultado<br>
+                <input type=text name=resul size=20></th>
+            </tr>
+            <tr bgcolor=#F56C27>
+                <th colspan=2 height=80><input type=button name=cal value='Calular' onclick='calcular()'> <input  type=reset name=limp value='Iniciar'></th>
+            </tr>
+        </table>
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Geometricas</title>
+    <script language="javascript">
+        function triangulo(){
+            //Captura de datos
+            base_triangulo = document.form.bas_t.value
+            altura_triangulo = document.form.alt_t.value
+
+            //Proceso
+            area_triangulo = (base_triangulo*altura_triangulo)/2
+
+            //Salida de datos
+            document.form.areaT.value = area_triangulo
+        }//Cierre función triangulo
+        function circulo(){
+            //Captura de datos
+            radio = document.form.rad.value
+
+            //Proceso
+            area_circulo = 3.14*(radio**2)
+            circunferencia = (2*radio)*3.14
+
+            //Salid de datos
+            document.form.areaC.value = area_circulo
+            document.form.circ.value = circunferencia
+        }//Cierre funcion circulo
+        function cuadrado(){
+            //Captura de datos
+            lados = document.form.lad.value
+
+            //Proceso
+            area_cuadrado = lados**2
+            perimetro = lados*4
+
+            //Salida de datos
+            document.form.areaD.value = area_cuadrado
+            document.form.per.value = perimetro
+        }//Cierre funcion cuadrado
+        function rectangulo(){
+            //Captura de datos
+            base_rectangulo = document.form.bas_r.value
+            altura_rectangulo = document.form.alt_r.value
+
+            //Proceso
+            area_rectangulo = base_rectangulo*altura_rectangulo
+
+            //Salida de datos
+            document.form.areaR.value = area_rectangulo
+        }//Cierre funcion rectangulo
+    </script>
+</head>
+<body>
+    <center>
+        <form name=form action="">
+        <table width=900 height=700 border=1 bordercolor=black align=center>
+            <tr bgcolor="#157fad">
+                <th colspan=2 height=100>Operaciones Geometricas</th>
+            </tr>
+            <tr height=50 bgcolor="#157fad">
+                <th>Area de un triangulo</th>
+                <th>Area y circunferencia de un circulo</th>
+            </tr>
+            <tr bgcolor="#7ec7eb">
+                <th align=left>Base &nbsp; &nbsp;<input type=number name=bas_t size=5> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Area<br><br>
+                Altura <input type=number name=alt_t size=5> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<input type=number name=areaT size=5><br><br><br><br>
+                <center><input type=button name=tri value='Calular' onclick="triangulo()"></center>
+                </th>
+                <th align=left>Radio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=number name=rad size=5> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Area<br><br>
+                Circunferencia <input type=number name=circ size=5> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<input type=number name=areaC size=5><br><br><br><br>
+                <center><input type=button name=cir value='Calular' onclick="circulo()"></center>
+                </th>
+            </tr>
+            <tr height=50 bgcolor="#157fad">
+                <th>Area y perimetro de un cuadrado</th>
+                <th>Area de un rectangulo</th>
+            </tr>
+            <tr bgcolor="#7ec7eb">
+                <th align=left>Lado &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=number name=lad size=5> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Area<br><br>
+                Perimetro <input type=number name=per size=5> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<input type=number name=areaD size=5><br><br><br><br>
+                <center><input type=button name=cuad value='Calular' onclick="cuadrado()"></center>
+                </th>
+                <th align=left>Base &nbsp;&nbsp;<input type=number name=bas_r size=5> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; Area<br><br>
+                Altura <input type=number name=alt_r size=5> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<input type=number name=areaR size=5><br><br><br><br>
+                <center><input type=button name=rect value='Calular' onclick="rectangulo()"></center>
+                </th>
+            </tr>
+            <tr bgcolor="#157fad">
+                <th colspan=2><input type=reset name=limp value='Limpiar'></th>
+            </tr>
+        </table>
+        </form>
+    </center>
+</body>
+</html>

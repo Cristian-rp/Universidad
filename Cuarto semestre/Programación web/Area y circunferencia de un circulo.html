@@ -1,0 +1,26 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area y circunferencia de un circulo</title>
+    <script language = "javascript"> 
+    //Pedir datos del circulo
+    radio = parseFloat(prompt("Ingrese el radio del circulo: "))
+    //Calcular el area
+    area = 3.14*(radio**2)
+    //alert("El area es: "+area)
+    //Calcular la circunferencia
+    circunferencia = (2*radio)*3.14
+    //alert("La circunferencia es: "+circunferencia)
+    document.write("<center><table border=1 bordercolor=green width=600 height=300 cellspacing=2 style='text-align: center;'>")
+    document.write("<tr bgcolor=#adf7b6><td colspan=9>Area y circunferencia de un circulo</td></tr>")
+    document.write("<tr bgcolor=#FFF5EE><td colspan = 4 rowspan = 4 width=80>Radio</td><td colspan = 4 rowspan = 4 width=80>"+radio+"</td><td>Area</td></tr>")
+    document.write("<tr bgcolor=#FFF5EE><td>"+area+"</td></tr>")
+    document.write("<tr bgcolor=#FFF5EE><td>Circunferencia</td></tr>")
+    document.write("<tr bgcolor=#FFF5EE><td>"+circunferencia+"</td></tr></table>")
+    </script>
+</head>
+<body>
+            
+</body>
